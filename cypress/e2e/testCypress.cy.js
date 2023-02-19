@@ -1,8 +1,11 @@
 import HomePage from "./POM/HomePage";
 import SearchBar from "./POM/SearchBar";
+import PageContent from "./POM/PageContent";
 
 describe('homepage test', () => {
   const homepage = new HomePage();
+  const searchbar = new SearchBar();
+  const pageContent = new PageContent();
 
   // it('visit homepage and check URL', () => {
   //   homepage.goToHomePage();
@@ -14,7 +17,16 @@ describe('homepage test', () => {
   //   homepage.checkNavigationBar();
   // })
 
-  it('count content in homepage', () => {
-    homepage.goToHomePage();
-  })
+  // it('count content in homepage', () => {
+  //   homepage.goToHomePage();
+  //   homepage.checkHomePageContents();
+  // })
+
+  // it('search for an item', () => {
+  //   homepage.goToHomePage();
+  //   searchbar.assertSearchBar();
+  //   searchbar.searchItem('dog')
+  //   homepage.checkURL('?s=dog')
+  //   searchbar.assertSearchedPage('dog')
+  // })
 })
